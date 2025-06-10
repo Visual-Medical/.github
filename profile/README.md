@@ -14,9 +14,6 @@ Our core research areas include but are not limited to:
 - Multimodal medical image registration and fusion
 - Deep learning-based disease detection and classification
 - Medical image super-resolution reconstruction
-- Radiomics and imaging biomarker mining
-- Computer-aided diagnosis (CAD) system development
-- Privacy protection and data security in medical image processing
 
 ## Open Source Projects
 
@@ -36,11 +33,11 @@ We warmly welcome researchers, developers, and medical professionals interested 
 If you are interested in our work or would like to collaborate on research, please contact us through:
 
 - Email: [yang_syy@qq.com](mailto:yang_syy@qq.com)
-- GitHub Discussions: [Create a new issue](https://github.com/Visual-Medical/discussions)
+- GitHub Discussions: [Create a new issue](https://github.com/orgs/Visual-Medical/discussions)
 
 ## License
 
-Unless otherwise specified, code in projects under this organization is released under the [MIT License](LICENSE).
+Unless otherwise specified, code in projects under this organization is released under the [MIT License](https://mit-license.org/).
 
 ---
 
