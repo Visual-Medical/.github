@@ -1,12 +1,47 @@
-## Hi there 👋
+# Visual Medical
 
-<!--
+Welcome to the Visual Medical organization! We focus on cutting-edge research and application development in the field of medical image processing, committed to advancing innovation and progress in medical imaging diagnostics through computer vision, deep learning, and image analysis technologies.
 
-**Here are some ideas to get you started:**
+## About Us
 
-🙋‍♀️ A short introduction - what is your organization all about?
-🌈 Contribution guidelines - how can the community get involved?
-👩‍💻 Useful resources - where can the community find your docs? Is there anything else the community should know?
-🍿 Fun facts - what does your team eat for breakfast?
-🧙 Remember, you can do mighty things with the power of [Markdown](https://docs.github.com/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
--->
+Visual Medical is a research team composed of medical imaging experts, computer scientists, and software engineers. Our mission is to develop advanced algorithms and tools to improve the efficiency of medical image analysis, diagnostic accuracy, and clinical decision support capabilities.
+
+## Research Directions
+
+Our core research areas include but are not limited to:
+
+- Medical image segmentation and recognition
+- Multimodal medical image registration and fusion
+- Deep learning-based disease detection and classification
+- Medical image super-resolution reconstruction
+- Radiomics and imaging biomarker mining
+- Computer-aided diagnosis (CAD) system development
+- Privacy protection and data security in medical image processing
+
+## Open Source Projects
+
+In our repositories, you can find various open-source tools, models, and datasets for medical image processing. These resources are designed to promote the development of academic research and clinical applications.
+
+## Contribution
+
+We warmly welcome researchers, developers, and medical professionals interested in medical image processing to join our open-source community:
+
+- Contribute code through Pull Requests
+- Report issues and suggest new features
+- Share your research findings and use cases
+- Improve documentation and tutorials
+
+## Contact Us
+
+If you are interested in our work or would like to collaborate on research, please contact us through:
+
+- Email: [yang_syy@qq.com](mailto:yang_syy@qq.com)
+- GitHub Discussions: [Create a new issue](https://github.com/Visual-Medical/discussions)
+
+## License
+
+Unless otherwise specified, code in projects under this organization is released under the [MIT License](LICENSE).
+
+---
+
+*Visual Medical - Transforming the future of medical image analysis with the power of technology*
