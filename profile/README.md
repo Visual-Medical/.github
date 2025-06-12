@@ -1,4 +1,10 @@
-# Visual Medical
+<div align="center" >
+  <img src="https://s21.ax1x.com/2025/06/12/pVkHTJS.png">
+</div>
+
+<div align="center" >
+  <h1>Visual Medical</h1>
+</div>
 
 Welcome to the Visual Medical organization! We focus on cutting-edge research and application development in the field of medical image processing, committed to advancing innovation and progress in medical imaging diagnostics through computer vision, deep learning, and image analysis technologies.
 
