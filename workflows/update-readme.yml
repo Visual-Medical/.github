@@ -1,0 +1,97 @@
+name: Update README based on membership
+on:
+  schedule:
+    - cron: '0 0 * * *'  # 每天运行一次
+  workflow_dispatch:
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write  # 需要写入权限来推送更改
+      actions: read
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4  # 使用最新版本
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          
+      - name: Check organization membership and update README
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          ORG_NAME: ${{ github.repository_owner }}
+        run: |
+          # 获取组织成员数量（公开成员）
+          PUBLIC_MEMBER_COUNT=$(curl -s -H "Authorization: token $GITHUB_TOKEN" \
+            "https://api.github.com/orgs/$ORG_NAME/members" | jq length)
+          
+          # 获取所有成员数量（包括私有成员，需要组织权限）
+          ALL_MEMBER_COUNT=$(curl -s -H "Authorization: token $GITHUB_TOKEN" \
+            "https://api.github.com/orgs/$ORG_NAME/members?filter=all" | jq length)
+          
+          echo "Public members: $PUBLIC_MEMBER_COUNT"
+          echo "Total members: $ALL_MEMBER_COUNT"
+          
+          # 检查是否有足够的成员来显示不同内容
+          if [ $ALL_MEMBER_COUNT -gt 5 ]; then
+            echo "Organization has sufficient members, using public README"
+            if [ -f "README-public.md" ]; then
+              cp README-public.md README.md
+              echo "UPDATED=true" >> $GITHUB_ENV
+              echo "STATUS=public" >> $GITHUB_ENV
+            else
+              echo "README-public.md not found, skipping update"
+            fi
+          else
+            echo "Organization is still recruiting, using recruiting README"
+            if [ -f "README-recruiting.md" ]; then
+              cp README-recruiting.md README.md
+              echo "UPDATED=true" >> $GITHUB_ENV
+              echo "STATUS=recruiting" >> $GITHUB_ENV
+            else
+              echo "README-recruiting.md not found, skipping update"
+            fi
+          fi
+          
+      - name: Check if README was actually changed
+        id: check_changes
+        run: |
+          if git diff --quiet README.md; then
+            echo "No changes to README.md"
+            echo "HAS_CHANGES=false" >> $GITHUB_ENV
+          else
+            echo "README.md has changes"
+            echo "HAS_CHANGES=true" >> $GITHUB_ENV
+          fi
+          
+      - name: Commit and push changes
+        if: env.UPDATED == 'true' && env.HAS_CHANGES == 'true'
+        run: |
+          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add README.md
+          git commit -m "🤖 Auto-update README to ${{ env.STATUS }} version
+          
+          - Updated based on organization membership count
+          - Triggered by: ${{ github.event_name }}
+          - Timestamp: $(date -u +'%Y-%m-%d %H:%M:%S UTC')"
+          git push
+          
+      - name: Create issue on failure
+        if: failure()
+        uses: actions/github-script@v7
+        with:
+          script: |
+            github.rest.issues.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              title: '🚨 README Auto-update Failed',
+              body: `The README auto-update workflow failed. Please check the workflow run for details.
+              
+              **Workflow Run:** ${context.runId}
+              **Triggered by:** ${context.eventName}
+              **Time:** ${new Date().toISOString()}
+              
+              Please investigate and fix the issue.`,
+              labels: ['bug', 'automation']
+            })
