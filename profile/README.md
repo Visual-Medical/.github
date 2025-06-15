@@ -38,7 +38,7 @@ We warmly welcome researchers, developers, and medical professionals interested 
 
 If you are interested in our work or would like to collaborate on research, please contact us through:
 
-- Be the part of visual medical community on GitHutb ✋ [Create an issue here for join the team]()
+- Be the part of visual medical community on GitHutb ✋ [Create an issue here for join the team](https://github.com/Visual-Medical/support/issues/new?template=invite.yaml)
 - Email: [yang_syy@qq.com](mailto:yang_syy@qq.com)
 - GitHub Discussions: [Create a new issue](https://github.com/orgs/Visual-Medical/discussions)
 
