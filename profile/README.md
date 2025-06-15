@@ -17,3 +17,10 @@ Welcome to the Visual Medical organization! We are affiliated with [South-Centra
 - Engaging in open-source project contributions significantly enhances the learning process by providing practical experience, fostering collaboration, and reinforcing theoretical knowledge through real-world application.
 - Engaging in collaborative environments allows individuals to learn from each other's experiences and to connect with like-minded peers, thereby fostering mutual growth and knowledge exchange.
 
+## License
+
+Unless otherwise specified, code in projects under this organization is released under the [MIT License](https://mit-license.org/).
+
+---
+
+*Visual Medical - Transforming the future of medical image analysis with the power of technology*
