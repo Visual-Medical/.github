@@ -1,1 +1,3 @@
-# This is a public README
+# .github
+
+> this repo profile section will be visible to public people
