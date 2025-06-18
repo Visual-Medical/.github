@@ -5,7 +5,17 @@
 <div align="center" >
   <h1>visual medical</h1>
 </div>
-
+<div align="center">
+  <img align="center" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg">
+  <img align="center" src="https://img.shields.io/badge/maintainer-louaq-blue">
+  <img align="center" src="(https://img.shields.io/badge/Made%20with-Python-1f425f.svg">
+  <img align="center" src="https://img.shields.io/pypi/l/ansicolortags.svg">
+  <img align="center" src="https://img.shields.io/github/contributors/Louaq/HSFPN-Det">
+  <img align="center" src="https://badgen.net/badge/icon/pypi?icon=pypi&label">
+  <img align="center" src="http://jb.gg/badges/official.svg">
+  
+</div>
+<br>
 Welcome to the Visual Medical organization! We are affiliated with [South-Central Minzu University](https://www.scuec.edu.cn/) and the supervisor is [Dr. Jianlin Zhu](https://www.scuec.edu.cn/jky/info/1165/4995.htm). We focus on cutting-edge research and application development in the field of medical image processing, committed to advancing innovation and progress in medical imaging diagnostics through computer vision, deep learning, and image analysis technologies.
 
 
