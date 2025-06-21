@@ -21,7 +21,7 @@ Welcome to the Visual Medical organization! We are affiliated with [South-Centra
 
 
 ## Community Support
-- Be the part of visual medical community on GitHutb   ✋ [Create an issue here for join the team](https://github.com/Visual-Medical/support/issues/new?template=invite.yaml) 
+- Be the part of visual medical community on GitHutb   <!--✋ [Create an issue here for join the team](https://github.com/Visual-Medical/support/issues/new?template=invite.yaml) -->
 - Join us to keep coding
 
 ## Why should you join this community?
