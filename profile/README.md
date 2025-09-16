@@ -15,7 +15,7 @@
 </div>
 <br>
 
-Welcome to the visual medical organization! We are affiliated with [South-Central Minzu University](https://www.scuec.edu.cn/) and the supervisor is [Dr. Jianlin Zhu](https://www.scuec.edu.cn/jky/info/1165/4995.htm). We focus on cutting-edge research and application development in the field of medical image processing, committed to advancing innovation and progress in medical imaging diagnostics through computer vision, deep learning, and image analysis technologies.
+Welcome to the visual medical organization! We are affiliated with [South-Central Minzu University](https://www.scuec.edu.cn/). We focus on cutting-edge research and application development in the field of medical image processing, committed to advancing innovation and progress in medical imaging diagnostics through computer vision, deep learning, and image analysis technologies.
 
 
 ## Community Support
