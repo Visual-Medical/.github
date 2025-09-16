@@ -6,8 +6,6 @@
   <h1>visual medical</h1>
 </div>
 <div align="center">
-  <img align="center" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg">
-  <img align="center" src="https://img.shields.io/badge/maintainer-louaq-blue">
   <img align="center" src="https://img.shields.io/badge/Made%20with-Python-1f425f.svg">
   <img align="center" src="https://img.shields.io/pypi/l/ansicolortags.svg">
   <img align="center" src="https://img.shields.io/github/contributors/Louaq/HSFPN-Det">
