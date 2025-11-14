@@ -8,7 +8,6 @@
 <div align="center">
   <img align="center" src="https://img.shields.io/badge/Made%20with-Python-1f425f.svg">
   <img align="center" src="https://img.shields.io/pypi/l/ansicolortags.svg">
-  <img align="center" src="https://badgen.net/badge/icon/pypi?icon=pypi&label">
   <img align="center" src="http://jb.gg/badges/official.svg">
   
 </div>
